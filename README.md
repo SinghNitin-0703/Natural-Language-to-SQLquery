@@ -17,7 +17,7 @@ The key to its accuracy is a **semantic few-shot prompting** mechanism. Instead 
 ## ✨ Core Features
 
 * **Intuitive Natural Language Interface:** Users can ask questions like "Compare the average gross income between male and female customers" or "What were the top 3 product lines by total revenue in January?"
-* **Advanced LLM-Powered Translation:** Utilizes Google's `gemini-1.5-flash` model via `langchain-google-genai` for a balance of high performance, speed, and cost-efficiency.
+* **Advanced LLM-Powered Translation:** Utilizes Google's `gemini-2.5-flash` model via `langchain-google-genai` for a balance of high performance, speed, and cost-efficiency.
 * **Semantic Few-Shot Prompting:** Implements a `ChromaDB` vector store with `Sentence-Transformer` embeddings. When a user asks a question, the system first finds the most similar *question-query* pairs from its example set and injects them into the prompt, guiding the LLM to produce a correct and syntactically valid MySQL query.
 * **Interactive Gradio Dashboard:** The application is wrapped in a clean, user-friendly Gradio UI that displays the generated SQL, the raw data results in a table, and a final, clear natural language explanation of the findings.
 * **Scalable & Modular Architecture:** The code is logically separated into modules for configuration (`config.py`), database connection (`database.py`), LLM setup (`llm_setup.py`), core logic (`chain_logic.py`), and the UI (`app.py`), making it easy to maintain, debug, and extend.
